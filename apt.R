@@ -6,7 +6,7 @@ library(ggmap)
 library(dplyr)
 stadata <- read.csv("C:/Users/user/Google 드라이브/경기과학기술대/3_2/07. 빅데이터/APT/4호선.csv")
 #Google API Key 등록
-googleAPIkey <- "AIzaSyDkIi6MQQ8BHjem9_xhVx28OtvfGfUW1FA"
+googleAPIkey <- "Google API Key"
 register_google(googleAPIkey)
 station_code <- as.character(stadata$"구주소")
 station_code <- geocode(station_code)
